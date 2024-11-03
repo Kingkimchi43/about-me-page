@@ -1,10 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
@@ -13,25 +14,25 @@
     </header>
 
     <!-- Introduction Section -->
-    <section>
+    <section class="fade-in">
         <h2>Intro!!</h2>
         <p>Hello! My name is <strong>Marcus Mckenzie</strong>, and I'm excited to share a little bit about myself with you. I've always had a passion for learning new things and trying to master them.</p>
     </section>
 
     <!-- Section 1: Education -->
-    <section>
+    <section class="fade-in">
         <h2>Education</h2>
-        <p>I study at BYU, where I focus on CyberSecurity. During my studies, I developed a strong interest in how networks are set up anw how complex they can become.</p>
+        <p>I study at BYU, where I focus on CyberSecurity. During my studies, I developed a strong interest in how networks are set up and how complex they can become.</p>
     </section>
 
     <!-- Section 2: Interests -->
-    <section>
+    <section class="fade-in">
         <h2>Interests</h2>
         <p>In my free time, I enjoy playing football and writing. It helps me stay creative and energized.</p>
     </section>
 
     <!-- Section 3: Hobbies -->
-    <section>
+    <section class="fade-in">
         <h2>Hobbies</h2>
         <p>When I'm not working or studying, I spend my time with my wife and friends. I love to play games and watch movies with them as well.</p>
     </section>
@@ -39,11 +40,13 @@
     <!-- JavaScript Section -->
     <section>
         <h2>Greetings</h2>
-        <p>
-            <script>
-            document.write((new Date().getHours() < 12) ? "Good morning!" : "Good afternoon!");
-            </script>
-        </p>
+        <p id="greeting"></p>
+    </section>
+
+    <!-- Button with Animation -->
+    <section>
+        <button id="actionButton">Click me for a surprise!</button>
+        <p id="surpriseMessage" style="display: none;">Here's a little surprise message just for you!</p>
     </section>
 
     <footer>
